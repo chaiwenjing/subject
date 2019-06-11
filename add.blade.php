@@ -8,19 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-<h2>活动页面</h2>
-<form action="add_do" method="post">
+<form action="logout" method="post">
+    <button>退登</button>
+</form>
+<form action="add_do" method="post" >
     <table>
         <tr>
-            <td>活动名称</td>
+            <td>用户名</td>
             <td><input type="text" name="name"></td>
         </tr>
         <tr>
-            <td>活动结束时间</td>
-            <td><input type="text" name="hour"></td>
+            <td>性别</td>
+            <td><input type="text" name="sex"></td>
         </tr>
         <tr>
-            <td><input type="submit" value="添加活动"></td>
+            <td>密码</td>
+            <td><input type="text" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>手机号</td>
+            <td><input type="text" name="tel"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="注册"></td>
         </tr>
     </table>
 </form>

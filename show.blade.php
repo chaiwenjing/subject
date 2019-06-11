@@ -8,31 +8,28 @@
     <title>Document</title>
 </head>
 <body>
-<h2>展示页面</h2>
+<form action="logout" method="post">
+    <button>退登</button>
+</form>
 <table>
     <tr>
-        <td>活动名称</td>
-        <td>活动时间</td>
-        <td>修改时间</td>
-        <td>添加时间</td>
+        <td>id</td>
+        <td>用户名</td>
+        <td>性别</td>
+        <td>密码</td>
+        <td>邮箱</td>
+        <td>操作</td>
     </tr>
     @foreach($data as $v)
         <tr>
             <td>{{$v->id}}</td>
             <td>{{$v->name}}</td>
-            <td>{{$v->hour}}</td>
-            <td>{{$v->updated_at}}</td>
-            <td>{{$v->created_at}}</td>
-            <td>
+            <td>{{$v->sex}}</td>
+            <td>{{$v->pwd}}</td>
+            <td>{{$v->email}}</td>
 
-            </td>
         </tr>
         @endforeach
-    <form action="purchase" method="post">
-        <input type="hidden" name="name">
-        <button>购买</button>
-    </form>
-
 </table>
 </body>
 </html>
