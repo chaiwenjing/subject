@@ -1,7 +1,5 @@
 <?php
-$array = [2,4,3,6,3,2,5,5];
-var_dump($array);
-function FindNumsAppearOnce($array){
-echo "[4,6]";
-}
+$a="1,2,3,4,5,6";
+$b="1,3,5,2,4,6";
+echo $a,$b;
 ?>
