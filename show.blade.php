@@ -8,28 +8,33 @@
     <title>Document</title>
 </head>
 <body>
-<form action="logout" method="post">
-    <button>退登</button>
-</form>
-<table>
-    <tr>
-        <td>id</td>
-        <td>用户名</td>
-        <td>性别</td>
-        <td>密码</td>
-        <td>邮箱</td>
-        <td>操作</td>
-    </tr>
-    @foreach($data as $v)
+<form action="">
+    <table border="1">
         <tr>
-            <td>{{$v->id}}</td>
-            <td>{{$v->name}}</td>
-            <td>{{$v->sex}}</td>
-            <td>{{$v->pwd}}</td>
-            <td>{{$v->email}}</td>
-
+            <td>商品名称</td>
+            <td>商品买点</td>
+            <td>店铺价</td>
+            <td>市场价</td>
+            <td>成本价</td>
+            <td>商品库存</td>
+            <td>商品库存码</td>
+            <td>商品图片</td>
+            <td>操作</td>
         </tr>
-        @endforeach
-</table>
+        @foreach($data as $v)
+            <tr>
+                <td>{{$v->id}}</td>
+                <td>{{$v->name}}</td>
+                <td>{{$v->point}}</td>
+                <td>{{$v->number}}</td>
+                <td>{{$v->market}}</td>
+                <td>{{$v->price}}</td>
+                <td>{{$v->stock}}</td>
+                <td>{{$v->code}}</td>
+                <td><img src="../images/{{$v->image}}" alt=""></td>
+            </tr>
+            @endforeach
+    </table>
+</form>
 </body>
 </html>

@@ -8,33 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-<form action="logout" method="post">
-    <button>退登</button>
-</form>
-<form action="add_do" method="post" >
+<h2>商品添加</h2>
+<form action="add_do" method="post" enctype="multipart/form-data">
     <table>
         <tr>
-            <td>用户名</td>
+            <td>商品名称</td>
             <td><input type="text" name="name"></td>
         </tr>
         <tr>
-            <td>性别</td>
-            <td><input type="text" name="sex"></td>
+            <td>商品买点</td>
+            <td><input type="text" name="point"></td>
         </tr>
         <tr>
-            <td>密码</td>
-            <td><input type="text" name="pwd"></td>
+            <td>店铺价</td>
+            <td><input type="text" name="number"></td>
         </tr>
         <tr>
-            <td>邮箱</td>
-            <td><input type="text" name="email"></td>
+            <td>市场价</td>
+            <td><input type="text" name="market"></td>
         </tr>
         <tr>
-            <td>手机号</td>
-            <td><input type="text" name="tel"></td>
+            <td>成本价</td>
+            <td><input type="text" name="price"></td>
         </tr>
         <tr>
-            <td><input type="submit" value="注册"></td>
+            <td>商品库存</td>
+            <td><input type="text" name="stock"></td>
+        </tr>
+        <tr>
+            <td>商品库存码</td>
+            <td><input type="text" name="code"></td>
+        </tr>
+        <tr>
+            <td>商品图片</td>
+            <td><input type="file" name="image"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="添加"></td>
         </tr>
     </table>
 </form>
