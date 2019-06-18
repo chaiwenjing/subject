@@ -1,6 +1,5 @@
 <?php
-$str=5;
-function sum_solution($str){
-    echo "15";
-}
+$a={3,32,321};
+$b=321323;
+print_r($b);
 ?>
